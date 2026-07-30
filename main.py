@@ -1,5 +1,5 @@
 import streamlit as st
-from number_baseball import run
+import run from number_baseball
 
 st.set_page_config(
     page_title="🎮 미니게임 사이트",
