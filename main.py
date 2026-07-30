@@ -1,3 +1,18 @@
 import streamlit as st
-st.title('윤석훈의 첫 웹앱')
-st.write('반갑습니다')
+from games.number_baseball import run
+
+st.set_page_config(
+    page_title="🎮 미니게임 사이트",
+    page_icon="🎮",
+    layout="centered"
+)
+
+st.title("🎮 미니게임 모음")
+
+menu = st.sidebar.selectbox(
+    "게임 선택",
+    ["숫자야구"]
+)
+
+if menu == "숫자야구":
+    run()
